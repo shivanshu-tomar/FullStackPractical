@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Full Stack Practical</title>
+  </head>
+  <body>
+    <div>
+      <div class="navbar_outer">
+        <h2>Ninestars</h2>
+        <div class="navbar_li_button">
+          <div>
+            <ul class="navbar_elements">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About Us</li></a>
+              <a href="#"><li style="color: #eb5d1e">Services</li></a>
+              <a href="#"><li>Portfolio</li></a>
+              <a href="#"><li>Team</li></a>
+              <div
+                class="dropdown_arrow"
+                id="dropdown_arror"
+                style="cursor: pointer"
+                onclick="myDropDownFunction()"
+              >
+                <div class="dropdown_list">
+                  <li>Drop Down</li>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                  </div>
+                </div>
+                <i class="far fa-angle-down"></i>
+              </div>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <button class="but">Get Started</button>
+        </div>
+      </div>
+      <div class="body-box">  
+           <div class="content">
+             Better Digital Experience with Ninestarts
+           </div>
+           <br/>
+           <div class="sub">
+             We are team of talented designers making websites with Bootsstrap
+           </div>
+           <br/>
+           <button id ="get">Get Started</button>
+          
+      </div>
+      <div class="up_arrow_box"><i class="fas fa-arrow-up"></i></div>
+    </div>
+  </body>
+  <script>
+    const myDropDownFunction = () => {
+      if (document.getElementById("myDropdown").style.display === "none") {
+        document.getElementById("myDropdown").style.display = "flex";
+      } else {
+        document.getElementById("myDropdown").style.display = "none";
+      }
+    };
+  </script>
+</html>
